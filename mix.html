@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="isc, computer aplication,java,programs solutions,functions,inheritence">
+        <meta name="description" content="Solutions for class 12th ISC Computer Applicaton">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <title>📕 <%- title %>
+        </title>
+        <link rel="shortcut icon" href="images/568.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <style>
+            .col {
+                background-image: url('textwater.png');
+            }
+
+            .img-fluid {
+                width: 69%;
+            }
+
+            @media screen and (max-width: 768px) {
+                .img-fluid {
+                    width: 100%;
+                }
+
+                .matrix td {
+                    padding: 4px;
+                }
+
+                .heading {
+                    font-size: 0.9rem !important;
+                }
+            }
+
+
+            .matrix {
+                position: relative;
+            }
+
+            .matrix-div {
+                display: inline-block;
+                position: relative;
+                margin: 0px 12px;
+                top: 27px;
+                /* margin-bottom: 20px; */
+            }
+
+
+            .matrix:before,
+            .matrix:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                border: 2px solid #000;
+                width: 0px;
+                height: 100%;
+            }
+
+            .matrix:before {
+                left: -6px;
+                border-right: 0;
+            }
+
+            .matrix:after {
+                right: -6px;
+                border-left: 0;
+            }
+
+            .matrix td {
+                padding: 5px 12px;
+            }
+
+
+
+            .frac {
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                letter-spacing: 0.001em;
+                text-align: center;
+            }
+
+            .frac>span {
+                display: block;
+                padding: 0.1em;
+            }
+
+            .frac span.bottom {
+                border-top: thin solid black;
+            }
+
+            .frac span.symbol {
+                display: none;
+            }
+
+            .integration {
+                font-size: 40px;
+            }
+
+            .heading {
+                display: block;
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
+        </style>
+    </head>
+</head>
+
+<body class="bg-light">
+
+    <!-- header -->
+    <h1 class="text-center text-danger">CLASS 12 C&D EXERCISE 5.8</h1>
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold"></span>
+                    Differentiate w.r.t. x the function in Exercises 1 to 11.
+
+                </span>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q1</span>
+                    (3x<sup>2</sup>
+                    – 9x + 5)<sup>9</sup>
+
+                </span>
+
+
+                <br>
+                <br> <span class="text-success heading">solutions </span>
+                <img src="/cdimg/miximg/img1.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q2</span>
+                    sin<sup>3</sup> x + cos<sup>6</sup> x
+
+                </span>
+
+
+                <br>
+                <br> <span class="text-success heading">solutions </span>
+                <img src="/cdimg/miximg/img2.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q3</span>
+                    (5x)<sup>3 cos 2x </sup>
+
+                </span>
+
+
+                <br>
+                <br> <span class="text-success heading">solutions </span>
+                <img src="/cdimg/miximg/img3.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q4</span>
+                    sin<sup>-1</sup>(x &radic;x), 0 ≤ x ≤ 1
+
+                </span>
+
+
+                <br>
+                <br> <span class="text-success heading">solutions </span>
+                <img src="/cdimg/miximg/img4.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q5</span>
+                    <div class="frac">
+                        <span>
+                            cos<sup>-1</sup>
+                            <div class="frac">
+                                <span>
+                                    x
+                                </span>
+                                <span class="symbol">/</span>
+                                <span class="bottom">2</span>
+                            </div>
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">&radic;2x+7</span>
+                    </div>,– 2 < x < 2 </span>
+
+
+                        <br>
+                        <br> <span class="text-success heading">solutions </span>
+                        <img src="/cdimg/miximg/img5.jpg" alt="" class="img-fluid">
+                        <img src="/cdimg/miximg/img5-1.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q6</span>
+                    cot<sup>-1</sup> [<div class="frac">
+                        <span>
+                            &radic;1+sinx + &radic;1-sinx
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom"> &radic;1+sinx - &radic;1-sinx</span>
+                    </div>],0 < x< &pi/2 </span>
+
+
+                        <br>
+                        <br> <span class="text-success heading">solutions </span>
+                        <img src="/cdimg/miximg/img6.jpg" alt="" class="img-fluid">
+                        <img src="/cdimg/miximg/img6-1.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q7</span>
+                    (log x)<sup>logx</sup>
+                    , x > 1
+                </span>
+
+
+                <br>
+                <br> <span class="text-success heading">solutions </span>
+                <img src="/cdimg/miximg/img7.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q8</span>
+                    cos (a cos x + b sin x), for some constant a and b.
+                </span>
+
+
+                <br>
+                <br> <span class="text-success heading">solutions </span>
+                <img src="/cdimg/miximg/img8.jpg" alt="" class="img-fluid">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col border border-1 mt-3">
+                <span class="text-danger heading"><span class="fw-bold">Q9</span>
+                    (sin x – cos x)<sup>(sin x – cos x)</sup>,<div class="frac">
+                        <span>
+                            &pi;
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">4</span>
+                    </div>
+                    < x< <div class="frac">
+                        <span>
+                            3&pi;
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">4</span>
+            </div>
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img9.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q10</span>
+                x<sup>x</sup>
+                + x<sup>a</sup>
+                + a<sup>x</sup>
+                + a<sup>a</sup>
+                , for some fixed a > 0 and x > 0
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img10.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img10-1.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q11</span>
+                x<sup>x<sup>2</sup>-3</sup> + (x-3)<sup>x<sup>2</sup></sup>,for x>3
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img11.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img11-1.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q12</span>
+                Find <div class="frac">
+                    <span>
+                        dy
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx</span>
+                </div>, if y = 12 (1 – cos t), x = 10 (t – sin t), -<div class="frac">
+                    <span>
+                        &pi;
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">2</span>
+                </div>
+                < t < <div class="frac">
+                    <span>
+                        &pi;
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">2</span>
+        </div>
+
+        </span>
+
+
+        <br>
+        <br> <span class="text-success heading">solutions </span>
+        <img src="/cdimg/miximg/img12.jpg" alt="" class="img-fluid">
+
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q13</span>
+                Find <div class="frac">
+                    <span>
+                        dy
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx</span>
+                </div>, if y = sin<sup>-1</sup> x + sin<sup>-1</sup> &radic;1-x<sup>2</sup> , 0 < x < 1 </span>
+
+
+                    <br>
+                    <br> <span class="text-success heading">solutions </span>
+                    <img src="/cdimg/miximg/img13.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q14</span>
+                If x&radic;1+y +y&radic;1+x , for , – 1 < x < 1, prove that <br>
+                    <br>
+                    <div class="frac">
+                        <span>
+                            dy
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">dx</span>
+                    </div> =- <div class="frac">
+                        <span>
+                            1
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">(1+x)<sup>2</sup></span>
+                    </div>
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img14.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img14-1.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q15</span>
+                If (x – a)<sup>2</sup>
+                + (y – b)<sup>2</sup>
+                = c<sup>2</sup>
+                , for some c > 0, prove that
+                <br>
+
+                <div class="frac">
+                    <span>
+                        [1+(<div class="frac">
+                            <span>
+                                dy
+                            </span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">dx</span>
+                        </div>)<sup>2</sup>]<sup>3/2</sup>
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">
+                        <div class="frac">
+                            <span>
+                                d<sup>2</sup>y
+                            </span>
+                            <span class="symbol">/</span>
+                            <span class="bottom">dx<sup>2</sup></span>
+                        </div>
+                    </span>
+                </div>
+                <br>
+                is a constant independent of a and b
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img15.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img15-1.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img15-2.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q16</span>
+                If cos y = x cos (a + y), with cos a ≠ ± 1, prove that <div class="frac">
+                    <span>
+                        dy
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx</span>
+                </div>=<div class="frac">
+                    <span>
+                        cos<sup>2</sup> (a+y)
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">sina</span>
+                </div>
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img16.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q17</span>
+                If x = a (cos t + t sin t) and y = a (sin t – t cos t), find <div class="frac">
+                    <span>
+                        d<sup>2</sup>y
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx<sup>2</sup></span>
+                </div>
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img17.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q18</span>
+                If f(x) = | x |<sup>3</sup>
+                , show that f″(x) exists for all real x and find it
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img18.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img18-1.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q19</span>
+                Using mathematical induction prove that <div class="frac">
+                    <span>
+                        d
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx</span>
+                </div> (x<sup>n</sup>)=nx<sup>n-1</sup> for all positive
+                integers n
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img19.jpg" alt="" class="img-fluid">
+            <img src="/cdimg/miximg/img19-1.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q20</span>
+                Using the fact that sin (A + B) = sin A cos B + cos A sin B and the differentiation,
+                obtain the sum formula for cosines
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img20.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q21</span>
+                Does there exist a function which is continuous everywhere but not differentiable
+                at exactly two points? Justify your answer
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img1.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q22</span>
+                If
+                <br>
+                <div class="matrix-div">
+                    <table class="matrix">
+                        <tr>
+                            <td>f(x)</td>
+                            <td>g(x)</td>
+                            <td>h(x)</td>
+                        </tr>
+                        <tr>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                ,prove that <div class="frac">
+                    <span>
+                        dy
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx</span>
+                </div> = <div class="matrix-div">
+                    <table class="matrix">
+                        <tr>
+                            <td>f'(x)</td>
+                            <td>g'(x)</td>
+                            <td>h'(x)</td>
+                        </tr>
+                        <tr>
+                            <td>l</td>
+                            <td>m</td>
+                            <td>n</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img22.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col border border-1 mt-3">
+            <span class="text-danger heading"><span class="fw-bold">Q23</span>
+                If y = e<sup>acos<sup>-1</sup>x</sup>,– 1 ≤ x ≤ 1, show that (1-x<sup>2</sup>) <div class="frac">
+                    <span>
+                        d<sup>2</sup>y
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx<sup>2</sup></span>
+                </div> -x <div class="frac">
+                    <span>
+                        dy
+                    </span>
+                    <span class="symbol">/</span>
+                    <span class="bottom">dx</span>
+                </div> -a<sup>2</sup>y=0
+
+            </span>
+
+
+            <br>
+            <br> <span class="text-success heading">solutions </span>
+            <img src="/cdimg/miximg/img23.jpg" alt="" class="img-fluid">
+
+        </div>
+    </div>
+
+
+    </div>
+</body>
+
+</html>
